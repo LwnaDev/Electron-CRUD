@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+	background: -webkit-linear-gradient(to bottom, #232526, #414345);
+    background-image: linear-gradient(to right, #000, #232526)
+    /* background:#F8F9FC; */
+}
+
+#products {
+    height: 90vh;
+    overflow-y: auto;
+    padding: 2px;
+}
+
+#dl{
+	text-align: center;
+	padding-top: 150px;
+    
+}
+
+.centrardiv {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.centrarbtn {
+background: red;
+width: 120px;
+}
+
+.btn-clear {background-image: linear-gradient(to right, #F7971E 0%, #FFD200  51%, #F7971E  100%)}
+.btn-clear {
+    margin: 10px;
+    padding: 5px 17px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #000;
+    border-radius: 10px;
+    display: block;
+}
+.btn-clear:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.btn-save {background-image: linear-gradient(to right, #0cebeb 0%, #20e3b2  51%, #0cebeb  100%)}
+.btn-save {
+    margin: 10px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+	transition: 0.5s;
+    background-size: 200% auto;
+	color: white;            
+    box-shadow: 0 0 20px #000;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-save:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.btn-edit {background-image: linear-gradient(to right, #0575E6 0%, #021B79  51%, #0575E6  100%)}
+.btn-edit {
+margin: 10px;
+padding: 5px 17px;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: white;            
+box-shadow: 0 0 20px #000;
+border-radius: 10px;
+display: block;
+}
+
+.btn-edit:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-delete {background-image: linear-gradient(to right, #ee0979 0%, #ff6a00  51%, #ee0979  100%)}
+.btn-delete {
+    margin: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #000;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-delete:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+} 
+
+
+
+.btn-refresh {background-image: linear-gradient(to right, #000000 0%, #434343  51%, #000000  100%)}
+.btn-refresh {
+    margin: 10px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #000;
+    border-radius: 10px;
+}
+
+.btn-refresh:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+#login1{
+	font-family: "Alumni Sans ExtraBold";
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    animation:login1 8s linear  infinite;
+}
+
+@keyframes login1{
+	12.5%{color: black;}
+	25%{color: red;}
+	37.5%{color: orange;}
+	50%{color: yellow;}
+	62.5%{color: green;}
+	75%{color: cyan;}
+    80%{color: white;}
+	87.5%{color:blue;}
+	100%{color: purple;}
+}
+
+.btn-default{
+	width: 80px;
+}
+
+.card-custom{
+    border: 1px solid white; 
+    background:#000;
+    border-radius: 0.20rem;
+}
+
+.scroll
+{
+    overflow-x:scroll;
+    overflow-y:hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

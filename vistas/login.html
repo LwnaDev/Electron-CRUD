@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Equipo 3" />
+    <meta name="description" content="Inventatio para Run Mountain"/>
+    <meta name="robots" content="noindex"/>
+    <meta name="robots" content="nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Mountain</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="../recursos/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
+</head>
+<body>
+    <section>
+        <div class="top-img"></div>
+        <form 
+            class="col-lg-5 col-md-7 col-sm-8 col-10 shadow bg-white p-5 text-center" 
+            id= "sesionForm">
+            <h1 
+                class="mb-5" 
+                id="Iniciar_sesion">
+                Iniciar Sesión
+            </h1>
+            <input 
+            id="user"
+            type = "text"
+            class ="form-control mb-2"
+            placeholder = "Usuario"/>
+            <br>
+            <input 
+                id="password"
+                type = "password"
+                class ="form-control mb-2"
+                placeholder = "Contraseña"/>
+            <div class="form-group">
+                <label 
+                    id="mensaje" 
+                    class="form-control border-0 text-center">
+                </label>
+            </div>
+            <button 
+				class="btn btn-info text-white text-uppercase rounded-0 mt-5 mb-4 btn-block f-enter animate__animated animate__flash animate__delay-5s" 
+				id="login"> Iniciar 
+			</button>
+            
+                <a href="./reset.html" class="f-pass">¿Olvidó la conraseña?</a>
+        </form>
+    </section>
+    <!-- <script src="/recursos/js/login.js"></script> -->
+    <script src="../recursos/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Iniciar_sesion {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    animation:Msg 8s linear  infinite;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+#Msg{
+    animation:Msg 8s linear  infinite;
+}
+
+@keyframes Msg{
+	12.5%{color: white;}
+	25%{color: red;}
+	37.5%{color: orange;}
+	50%{color: yellow;}
+	62.5%{color: green;}
+	75%{color: cyan;}
+	87.5%{color:blue;}
+	100%{color: purple;}
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 270px;
+    background: linear-gradient(0deg, #00000054, #00000054), url(../img/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section form {
+    position: absolute;
+    z-index: 1;
+}
+
+.form-control {
+    border: 0;
+    border-bottom: 2px solid #f1f1f1;
+    color: #232526 !important;
+}
+
+.form-control::placeholder {
+    color: #515151;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0;
+    border-bottom: 2px solid #515151;
+}
+
+.btn {
+    background-color: #232526;
+    border: none;
+    font-size: 1.25em;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.25rem #515151;
+}
+
+.f-pass {
+    color: #ccc;
+}
+
+.f-pass:hover {
+    color: #9492ee;
+}

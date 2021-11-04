@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Equipo 3" />
+    <meta name="description" content="Inventatio para Run Mountain"/>
+    <meta name="robots" content="noindex"/>
+    <meta name="robots" content="nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Run Mountain</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../recursos/css/darkly.css">
+    <link rel="stylesheet" href="../recursos/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+    <main class="container-fluid">
+        <div class="row">
+		<img src="../recursos/img/bannerB.jpg">
+            <div class="col-md-6 mt-2 p-4">
+                <div class="card-custom d-flex mb-3 shadow-sm">
+                    <div 
+                        class="mr-auto p-2 " 
+                        id="login1">
+                        <h3>
+                            <span style="padding-left:3em">Ingresar productos
+                            </span>
+                        </h3>
+                    </div>
+                </div>
+                <form class="card card-body mt-2 animate__animated animate__bounceInUp" id="productForm">
+                    <div class="form-group">
+                        <input 
+                            type="text" id="name" 
+                            placeholder="✎ Nombre" 
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="number" 
+                            id="price" 
+                            step="any" 
+                            placeholder="🫐 Precio" 
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="color" 
+                            placeholder="🎨 Color" 
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="number" 
+                            id="stock" 
+                            step="any" 
+                            placeholder="🟩 Stock" 
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <textarea 
+                            id="description" 
+                            rows="4" 
+                            placeholder="✉ Descripción" 
+                            class="form-control"></textarea>
+                    </div>
+                    <br>
+                    <div class="form-group text-center btn-toolbar centrardiv">
+						<button 
+                            class="btn btn-clear centrarbtn" 
+                            onclick="limpiar()">
+                            <i class="fas fa-redo"></i> Limpiar
+                        </button>
+						<button 
+                            class="btn btn-save centrarbtn">
+                            <i class="fas fa-check"></i> Guardar
+                        </button>
+                    </div>
+                </form>
+				<br>
+					<img src="../recursos/img/white.png"
+						width="100"
+						height="50"
+						title="Zapatilla blanca Nike">
+                    <button 
+                        class="btn btn-refresh" 
+                        onclick="location.reload()">
+                        <i class="fas fa-sync-alt"></i> Actualizar
+                    </button>      
+                    <img src="../recursos/img/pink.png  "
+						width="100"
+						height="50"
+						title="Zapatilla rosa Nike">        
+            </div>
+            <div class="col-md-6 mt-2 p-4">
+                <div class="card-custom d-flex mb-3 shadow-sm">
+                    <div 
+                        class="mr-auto p-2 " 
+                        id="login1"><h3>
+                            <span 
+                                style="padding-left:3em">Detalles
+                            </span>
+                        </h3>
+                    </div>
+					<div 
+                        class="my-auto p-0" 
+                        id="login1">
+                        <h5 class="productos creados">Total: 
+                            <span 
+                                class="badge badge-success" 
+                                id="cantidad">
+                            </span>
+                        </h5>
+                    </div>
+                </div>
+                <div id="productos"></div>
+            </div>
+        </div>
+    </main>
+    <!-- Se menciona a app.js -->
+    <script src="../recursos/js/app.js"></script>
+	<script>
+		function limpiar() {
+            document.getElementById("productForm").reset();
+        }
+	</script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
